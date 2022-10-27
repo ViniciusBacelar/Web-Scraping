@@ -29,7 +29,7 @@ def save_image(folder: str, name: str, url: str):
 
 
 if __name__ == '__main__':
-    username = 'sdavidbastos'
+    username = input("Type your username: ")
     url = 'https://github.com/'+username
     r = rq.get(url)
     soup = bs(r.content, 'html.parser')
